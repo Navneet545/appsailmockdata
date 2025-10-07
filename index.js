@@ -25,8 +25,9 @@ app.use('/noSql',noSql);
 
 app.post('/api/auth',auth.postauthrequest);
 // creating userList routes
+console.log(1);
 app.use('/api/userList',userListRoutes);
-// app.use(errorHandler);
+app.use(errorHandler);
 
 
 app.listen(PORT,()=>{
